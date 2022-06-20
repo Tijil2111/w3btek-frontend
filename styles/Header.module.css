@@ -16,7 +16,7 @@
   cursor: pointer;
 }
 
-#navList {
+.navList {
   display: flex;
   align-items: center;
 }
@@ -96,7 +96,7 @@
   #icon {
     display: block;
   }
-  #navList {
+  .navList {
     display: none;
   }
   .navListItem {

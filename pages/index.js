@@ -19,10 +19,18 @@ export default function Home() {
           <div className={styles.text1}>
             to <span className={styles.text2}>Music</span>
           </div>
-          <div>
-            Join the community where we make things that help you feel the tune
+          <div className={styles.subDiv}>
+            <div className={styles.subText}>Join the community where we</div>
+            <div className={styles.subText}>
+              make things that helps you feel
+            </div>
+            <div className={styles.subText}>the tune</div>
+          </div>
+          <div className={styles.buttonDiv}>
+            <button className={styles.button}>Shop Now</button>
           </div>
         </div>
+        <img src="/music1.svg" className={styles.image}></img>
       </div>
     </div>
   );

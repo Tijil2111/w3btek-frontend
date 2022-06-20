@@ -5,7 +5,7 @@
 .sideTitle {
   display: flex;
   flex-direction: column;
-  margin-top: 200px;
+  justify-content: center;
   margin-left: 200px;
 }
 .text1 {
@@ -14,4 +14,50 @@
 }
 .text2 {
   color: #2f82ff;
+}
+.subText {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.subDiv {
+  padding-top: 30px;
+}
+.buttonDiv {
+  padding-top: 30px;
+}
+.button {
+  height: 50px;
+  width: 145px;
+  border: none;
+  background-color: #2f82ff;
+  color: white;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  .mainDiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .text1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .subText {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .image {
+    height: 400px;
+    width: 400px;
+    align-self: center;
+  }
+  .sideTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+  }
 }

@@ -15,7 +15,7 @@ export default function Header() {
 
       <div>
         <FontAwesomeIcon icon={faBars} id={styles.icon} />
-        <ul id={styles.navList}>
+        <ul className={styles.navList}>
           <li className={`${styles.navListItem}`}>
             <Link href="/features">
               <div className={styles.navLink}>Our Features</div>
