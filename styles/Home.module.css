@@ -1,5 +1,8 @@
+.primaryColor {
+  color: #2f82ff;
+}
 .mainDiv {
-  min-height: calc(100vh - 73px);
+  min-height: calc(100vh - 63px);
   display: flex;
   justify-content: space-around;
   padding: 0 40px;
@@ -36,7 +39,89 @@
   border-radius: 5px;
   cursor: pointer;
 }
-@media only screen and (max-width: 700px) {
+
+.learnDiv {
+  min-height: calc(100vh - 73px);
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+}
+
+.learnHead {
+  padding-top: 30px;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+}
+.learnHead1 {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+}
+.learnSubHead {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.dot1 {
+  position: absolute;
+  left: 20%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #2f82ff;
+}
+.dot2 {
+  position: absolute;
+  top: 125%;
+  left: 80%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+.dot3 {
+  position: absolute;
+  top: 105%;
+  left: 80%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #2f82ff;
+}
+.dot4 {
+  position: absolute;
+  top: 105%;
+  left: 20%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+.features {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.featuresDiv {
+  height: 200px;
+  width: 445px;
+}
+.featureTitle {
+  font-weight: bold;
+  font-size: 25px;
+}
+.featureDesc {
+  padding-top: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.features1Div {
+  height: 200px;
+  width: 445px;
+  align-self: flex-end;
+}
+@media only screen and (max-width: 1000px) {
   .mainDiv {
     display: flex;
     flex-direction: column;
@@ -60,5 +145,18 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 100px;
+  }
+  .dot1,
+  .dot2,
+  .dot3,
+  .dot4 {
+    display: none;
+  }
+  .features {
+    justify-content: center;
+    align-items: center;
+  }
+  .features1Div {
+    align-self: center;
   }
 }
