@@ -54,8 +54,10 @@ export default function Home() {
             </div>
             <div className={styles.featureDesc}>
               We make products used by artists so that the can feel their
-              creations. Taylor Swift, Arjit Singh are a few to name. Why dont
-              you level up your music ?
+              creations. Taylor Swift, Arjit Singh are a few to name.
+            </div>
+            <div className={styles.featureDesc}>
+              Why dont you level up your music ?
             </div>
           </div>
           <div className={styles.features1Div}>
