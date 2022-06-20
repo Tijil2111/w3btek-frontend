@@ -1,0 +1,17 @@
+.mainDiv {
+  height: 80vh;
+  display: flex;
+}
+.sideTitle {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  margin-left: 200px;
+}
+.text1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+.text2 {
+  color: #2f82ff;
+}
