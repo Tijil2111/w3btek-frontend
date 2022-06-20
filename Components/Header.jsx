@@ -1,21 +1,40 @@
 import styles from "../styles/Header.module.css";
 import Link from "next/link";
 import { useState } from "react";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Header() {
-  const [clicked, setClicked] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
-    <div id={styles.header}>
-      <div id={styles.title} className={styles.navLink}>
-        TuneSmith
+    <div id={styles.header} className={open ? styles.mobileHeader : ""}>
+      <div id={open ? styles.closeHeading : ""}>
+        <Link href="/" className={styles.navLink}>
+          <div
+            id={styles.title}
+            className={`${styles.navLink} ${open ? styles.mobileTitle : ""}`}
+          >
+            TuneSmith
+          </div>
+        </Link>
+
+        <FontAwesomeIcon
+          onClick={() => setOpen(false)}
+          icon={faTimes}
+          id={styles.icon}
+          className={!open ? styles.hidden : styles.iconVisible}
+        />
       </div>
 
       <div>
-        <FontAwesomeIcon icon={faBars} id={styles.icon} />
-        <ul className={styles.navList}>
+        <FontAwesomeIcon
+          onClick={() => setOpen(true)}
+          icon={faBars}
+          id={styles.icon}
+          className={open ? styles.hidden : styles.iconVisible}
+        />
+        <ul className={styles.navList} id={open ? styles.mobileOpen : ""}>
           <li className={`${styles.navListItem}`}>
             <Link href="/features">
               <div className={styles.navLink}>Our Features</div>

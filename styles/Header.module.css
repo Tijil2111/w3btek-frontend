@@ -71,33 +71,54 @@
   display: none;
 }
 
-.mobileVisible {
-  display: block !important;
+#iconVisible {
+  display: block;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#mobileOpen {
+  display: flex !important;
+  flex-direction: column;
 }
 
 .mobileHeader {
-  padding-bottom: 500px;
-  display: block !important;
+  flex-direction: column !important;
   text-align: center;
-  border-radius: 5px;
-}
-
-.hiddenIcon {
-  display: none !important;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .mobileTitle {
   margin-bottom: 25px;
 }
 
-@media only screen and (max-width: 700px) {
+#closeHeading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#icon {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 630px) {
   #icon {
     display: block;
   }
   .navList {
     display: none;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  #header {
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   .navListItem {
-    margin-bottom: 25px;
+    margin: 15px 0 !important;
   }
 }
