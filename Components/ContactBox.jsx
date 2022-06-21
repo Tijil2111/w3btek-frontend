@@ -21,14 +21,14 @@ export default function ContactBox() {
               <input
                 type="text"
                 className={styles.input}
-                placeholder="Name"
+                placeholder="Your Name"
                 required
                 name="name"
               />
               <input
                 type="text"
                 className={styles.input}
-                placeholder="Email"
+                placeholder="Your Email"
                 required
                 name="email"
               />

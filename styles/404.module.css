@@ -1,0 +1,12 @@
+#container {
+  min-height: calc(100vh - 115px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#heading {
+  font-size: 65px;
+  margin-bottom: 10px;
+}

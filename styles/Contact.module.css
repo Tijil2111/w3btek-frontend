@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 .contact {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .heading {
-  font-size: 50px;
+  font-size: 40px;
   color: #2f82ff;
   text-align: center;
   padding-top: 50px;
@@ -17,12 +17,14 @@
   padding-bottom: 40px;
 }
 .contactBox {
-  background-color: #d6dded;
+  background-color: white;
   border-radius: 10px;
   width: 900px;
-  height: 700px;
-  border: 1px solid #7a7a7a;
-  box-shadow: 0px 4px 7px rgba(180, 180, 180, 0.25);
+  height: 620px;
+  border: 1px solid #afafaf;
+  border-radius: 10px;
+  box-shadow: 1px 4px 7px rgba(180, 180, 180, 0.25);
+  filter: drop-shadow(0px 5px 7px rgba(173, 173, 173, 0.25));
   display: flex;
 }
 
@@ -31,12 +33,14 @@
   font-weight: bold;
   padding-left: 50px;
   padding-top: 30px;
+  font-weight: bolder;
 }
 .sub {
   font-size: 15px;
   font-weight: 300;
   padding-left: 50px;
   padding-top: 20px;
+  width: 80%;
 }
 .form {
   padding: 50px;
@@ -45,30 +49,37 @@
   gap: 30px;
 }
 .input {
-  background: #e2e6ee;
+  background: #f0f0f0;
+  box-shadow: 1px 2px 3px rgb(206, 206, 206);
   border-radius: 5px;
   border: none;
   outline: none;
   font-size: 16px;
   padding: 14px 15px;
   width: 350px;
+  padding: 17px 20px;
 }
 .message {
-  background: #e2e6ee;
+  background: #f0f0f0;
   border-radius: 5px;
   border: none;
   outline: none;
   font-size: 16px;
   padding: 14px 15px;
   width: 500px;
-  height: 200px;
+  height: 125px;
   font-family: "Inter", sans-serif;
+  box-shadow: 1px 2px 3px rgb(206, 206, 206);
+  resize: none;
 }
 
 .submitButton {
-  width: 150px;
-  height: 67px;
+  width: 165px;
+  padding: 17px 25px;
   background: #2f82ff;
+  letter-spacing: 0.75px;
+  box-shadow: 1px 5px 7px 2px rgb(216, 216, 216, 0.85);
+  border-radius: 10px;
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -87,13 +98,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
     width: 100%;
-    background-color: #d6dded;
-    position: absolute; /* added */
-    bottom: 0; /* added */
-    left: 0;
-    border-radius: 10px;
+    background-color: white;
   }
   .message {
     background: #e2e6ee;
@@ -105,5 +111,17 @@
     width: 400px;
     height: 200px;
     font-family: "Inter", sans-serif;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .input {
+    width: 92%;
+  }
+  .message {
+    width: 95%;
+  }
+  .submitButton {
+    margin: auto;
   }
 }

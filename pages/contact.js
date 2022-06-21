@@ -7,7 +7,7 @@ export default function contactPage() {
   return (
     <>
       <div className={styles.contact}>
-        <div className={styles.heading}>Contact</div>
+        <div className={styles.heading}>Contact Us</div>
         <ContactBox />
         <ContactMobile />
       </div>

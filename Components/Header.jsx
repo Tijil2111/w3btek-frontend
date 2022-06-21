@@ -36,11 +36,6 @@ export default function Header() {
         />
         <ul className={styles.navList} id={open ? styles.mobileOpen : ""}>
           <li className={`${styles.navListItem}`}>
-            <Link href="/features">
-              <div className={styles.navLink}>Our Features</div>
-            </Link>
-          </li>
-          <li className={`${styles.navListItem}`}>
             <Link href="/products">
               <div className={styles.navLink}>Products</div>
             </Link>

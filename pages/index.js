@@ -2,6 +2,8 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div>
@@ -27,7 +29,9 @@ export default function Home() {
             <div className={styles.subText}>the tune</div>
           </div>
           <div className={styles.buttonDiv}>
-            <button className={styles.button}>Shop Now</button>
+            <Link href="/products">
+              <button className={styles.button}>Shop Now</button>
+            </Link>
           </div>
         </div>
         <img src="/music1.svg" className={styles.image}></img>
@@ -55,7 +59,7 @@ export default function Home() {
               Why dont you level up your music ?
             </div>
           </div>
-          <div className={styles.features1Div}>
+          <div className={styles.featuresDiv}>
             <div className={styles.featureTitle}>
               Feel <span className={styles.primaryColor}>More</span> Do{" "}
               <span className={styles.primaryColor}>More</span>
@@ -82,34 +86,36 @@ export default function Home() {
 
       <div className={styles.achievementsDiv}>
         <div className={styles.mobileTitle}>Achievements</div>
-        <div className={styles.achievementsSide}>
-          <div className={styles.achivementsTitle}>Achievements</div>
-          <FontAwesomeIcon
-            icon={faTrophy}
-            size="2x"
-            className={styles.achievementsIcon}
-          />
-        </div>
-        <div className={styles.achievementsCards}>
-          <div className={styles.achievementsCard}>
-            <div className={styles.achievementTitle}>
-              In <span className={styles.primaryColor}>Top 3</span> Music Wear
-              Producers
-            </div>
-            <div className={styles.achievementDesc}>
-              In 2021, TuneSmith gained the 2nd position in the Top 3 music wear
-              producers, being second to Bose.
-            </div>
+        <div id={styles.data}>
+          <div className={styles.achievementsSide}>
+            <div className={styles.achivementsTitle}>Achievements</div>
+            <FontAwesomeIcon
+              icon={faTrophy}
+              size="2x"
+              className={styles.achievementsIcon}
+            />
           </div>
-          <div>
-            <div className={styles.achievementsCard1}>
+          <div className={styles.achievementsCards}>
+            <div className={styles.achievementsCard}>
               <div className={styles.achievementTitle}>
-                Awarded <span className={styles.primaryColor}>MTV</span> Best
-                Music Wear Producer
+                In <span className={styles.primaryColor}>Top 3</span> Music Wear
+                Producers
               </div>
               <div className={styles.achievementDesc}>
-                In 2022, TuneSmith was awarded the MTV Best Music Wear Producer
-                of the year award.
+                In 2021, TuneSmith gained the 2nd position in the Top 3 music
+                wear producers, being second to Bose.
+              </div>
+            </div>
+            <div>
+              <div className={styles.achievementsCard1}>
+                <div className={styles.achievementTitle}>
+                  Awarded <span className={styles.primaryColor}>MTV</span> Best
+                  Music Wear Producer
+                </div>
+                <div className={styles.achievementDesc}>
+                  In 2022, TuneSmith was awarded the MTV Best Music Wear
+                  Producer of the year award.
+                </div>
               </div>
             </div>
           </div>

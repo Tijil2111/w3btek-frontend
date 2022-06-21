@@ -50,6 +50,7 @@
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 1px 5px 7px 2px rgb(216, 216, 216, 0.85);
 }
 
 .learnDiv {
@@ -77,27 +78,32 @@
 }
 
 .features {
-  padding-top: 150px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .featuresDiv {
-  height: 200px;
-  width: 445px;
+  width: 470px;
+  margin-bottom: 50px;
+  background-color: #dcdfe6;
+  border-radius: 10px;
+  border: solid 2px #7a7a7a;
+  padding: 40px;
+}
+.featureTitle,
+.featureDesc {
+  width: 400px;
 }
 .featureTitle {
   font-weight: bold;
   font-size: 25px;
+  margin-bottom: 15px;
 }
 .featureDesc {
   padding-top: 20px;
   font-size: 15px;
   font-weight: 500;
-}
-.features1Div {
-  height: 200px;
-  width: 445px;
-  align-self: flex-end;
 }
 .achievementsDiv {
   height: 100vh;
@@ -129,10 +135,13 @@
   display: flex;
   height: 100vh;
   flex-direction: column;
-
   justify-content: center;
-  padding-left: 50px;
-  gap: 60px;
+  margin: auto;
+}
+#data {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 .achievementsCard {
   height: 250px;
@@ -140,6 +149,7 @@
   background-color: #d6dae4;
   border-radius: 10px;
   border: solid 2px #7a7a7a;
+  margin-bottom: 40px;
 }
 .achievementsCard1 {
   height: 250px;
@@ -236,7 +246,10 @@
   }
   .achievementsCards {
     align-items: center;
-    padding-left: 10px;
+  }
+  .featuresDiv {
+    background: none !important;
+    border: none !important;
   }
 }
 
@@ -265,9 +278,6 @@
     justify-content: center;
     align-items: center;
   }
-  .features1Div {
-    align-self: center;
-  }
 }
 
 @media screen and (max-width: 700px) {
@@ -277,8 +287,18 @@
     align-items: center;
   }
 
-  .featuresDiv,
-  .features1Div {
+  .featuresDiv {
     width: 95% !important;
+  }
+  .achievementsCard,
+  .achievementsCard1 {
+    width: 95% !important;
+  }
+  .achievementsCard1 {
+    margin-left: 10px;
+  }
+  .featureTitle,
+  .featureDesc {
+    width: 95%;
   }
 }
