@@ -20,45 +20,34 @@ export default function Products({ products }) {
     let updatedProducts = [];
 
     if (name && name.trim().length > 0) {
-      products.forEach((product) => {
+      updatedProducts = products.filter((product) =>
         product.name.toLowerCase().includes(name.toLowerCase())
-          ? updatedProducts.push(product)
-          : {};
-      });
+      );
     }
-    if (updatedProducts.length > 0) {
-      if (type && type.trim().length > 0) {
-        updatedProducts.forEach((product, index) => {
-          !product.type.toLowerCase().includes(type.toLowerCase())
-            ? updatedProducts.splice(index, 1)
-            : {};
-        });
-      }
-    } else {
-      if (type && type.trim().length > 0) {
-        products.forEach((product, index) => {
-          product.type.toLowerCase().includes(type.toLowerCase())
-            ? updatedProducts.push(product)
-            : {};
-        });
+    if (type && type.trim().length > 0) {
+      if (updatedProducts.length > 0) {
+        if (type && type.trim().length > 0) {
+          updatedProducts = updatedProducts.filter((product) =>
+            product.type.toLowerCase().includes(type.toLowerCase())
+          );
+        }
+      } else {
+        if (type && type.trim().length > 0) {
+          updatedProducts = products.filter((product) =>
+            product.type.toLowerCase().includes(type.toLowerCase())
+          );
+        }
       }
     }
-    if (updatedProducts.length > 0) {
-      if (intPrice != null) {
-        updatedProducts.forEach((product, index) => {
-          console.log(parseInt(product.price) <= 1500);
-          !(parseInt(product.price) <= intPrice)
-            ? updatedProducts.splice(index, 1)
-            : {};
-        });
-      }
-    } else {
-      if (intPrice != null) {
-        products.forEach((product, index) => {
-          parseInt(product.price) <= intPrice
-            ? updatedProducts.push(product)
-            : {};
-        });
+    if (!(intPrice != 0 && !intPrice)) {
+      if (updatedProducts.length > 0) {
+        updatedProducts = updatedProducts.filter(
+          (product) => parseInt(product.price) <= intPrice
+        );
+      } else {
+        updatedProducts = products.filter(
+          (product) => parseInt(product.price) <= intPrice
+        );
       }
     }
 
