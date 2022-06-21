@@ -1,6 +1,6 @@
 .product {
   width: 260px;
-  height: 285px;
+  height: 295px;
   background: #ffffff;
   border: 1px solid #aeaeae;
   border-radius: 5px;
@@ -14,10 +14,16 @@
 
 #image {
   width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
 }
 
 #name {
   font-size: 22px;
   font-weight: bolder;
   margin-bottom: 10px;
+}
+
+#type {
+  font-weight: bold;
 }

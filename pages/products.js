@@ -25,20 +25,41 @@ export default function Products({ products }) {
           : {};
       });
     }
-    if (type && type.trim().length > 0) {
-      updatedProducts.forEach((product, index) => {
-        !product.type.toLowerCase().includes(type.toLowerCase())
-          ? updatedProducts.splice(index, 1)
-          : {};
-      });
+    if (updatedProducts.length > 0) {
+      if (type && type.trim().length > 0) {
+        updatedProducts.forEach((product, index) => {
+          !product.type.toLowerCase().includes(type.toLowerCase())
+            ? updatedProducts.splice(index, 1)
+            : {};
+        });
+      }
+    } else {
+      if (type && type.trim().length > 0) {
+        products.forEach((product, index) => {
+          product.type.toLowerCase().includes(type.toLowerCase())
+            ? updatedProducts.push(product)
+            : {};
+        });
+      }
     }
-    if (intPrice != null) {
-      updatedProducts.forEach((product, index) => {
-        !parseInt(product.price) <= intPrice
-          ? updatedProducts.splice(index, 1)
-          : {};
-      });
+    if (updatedProducts.length > 0) {
+      if (intPrice != null) {
+        updatedProducts.forEach((product, index) => {
+          !parseInt(product.price) <= intPrice
+            ? updatedProducts.splice(index, 1)
+            : {};
+        });
+      }
+    } else {
+      if (intPrice != null) {
+        products.forEach((product, index) => {
+          parseInt(product.price) <= intPrice
+            ? updatedProducts.push(product)
+            : {};
+        });
+      }
     }
+
     setDisplayingProducts(updatedProducts);
   };
 
@@ -87,6 +108,7 @@ export default function Products({ products }) {
                 key={index}
                 name={productData.name}
                 image={productData.image}
+                type={productData.type}
                 price={productData.price}
               />
             );
