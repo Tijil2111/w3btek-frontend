@@ -40,12 +40,7 @@ export default function Home() {
           </div>
           <div className={styles.learnSubHead}>Music is made to be felt</div>
         </div>
-        <div>
-          <div className={styles.dot1}></div>
-          <div className={styles.dot2}></div>
-          <div className={styles.dot3}></div>
-          <div className={styles.dot4}></div>
-        </div>
+
         <div className={styles.features}>
           <div className={styles.featuresDiv}>
             <div className={styles.featureTitle}>
@@ -96,8 +91,65 @@ export default function Home() {
           />
         </div>
         <div className={styles.achievementsCards}>
-          <div>he</div>
-          <div>yo</div>
+          <div className={styles.achievementsCard}>
+            <div className={styles.achievementTitle}>
+              In <span className={styles.primaryColor}>Top 3</span> Music Wear
+              Producers
+            </div>
+            <div className={styles.achievementDesc}>
+              In 2021, TuneSmith gained the 2nd position in the Top 3 music wear
+              producers, being second to Bose.
+            </div>
+          </div>
+          <div>
+            <div className={styles.achievementsCard1}>
+              <div className={styles.achievementTitle}>
+                Awarded <span className={styles.primaryColor}>MTV</span> Best
+                Music Wear Producer
+              </div>
+              <div className={styles.achievementDesc}>
+                In 2022, TuneSmith was awarded the MTV Best Music Wear Producer
+                of the year award.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.timelineDiv}>
+        <div className={styles.timelineTitle}>Our Journey !</div>
+
+        <div className={styles.timeline}>
+          <div className={styles.timelineBox}>
+            <div className={styles.purpleBox}></div>
+            <div className={styles.purpleColor}>India</div>
+          </div>
+          <div className={styles.blueBox}></div>
+          <div className={styles.timelineBox}>
+            <div className={styles.blueBox}></div>
+            <div className={styles.blueColor}>Japan</div>
+          </div>
+          <div className={styles.blueBox}></div>
+          <div className={styles.redBox}></div>
+          <div className={styles.timelineBox}>
+            <div className={styles.redBox}></div>
+            <div className={styles.redColor}>USA</div>
+          </div>
+          <div className={styles.redBox}></div>
+          <div className={styles.redBox}></div>
+          <div className={styles.blueBox}></div>
+          <div className={styles.timelineBox}>
+            <div className={styles.blueBox}></div>
+            <div className={styles.blueColor}>UK</div>
+          </div>
+          <div className={styles.greenBox}></div>
+          <div className={styles.timelineBox}>
+            <div className={styles.greenBox}></div>
+            <div className={styles.greenColor}>World Wide</div>
+          </div>
+          <div className={styles.greenBox}></div>
+          <div className={styles.PS}>
+            <div className={styles.purpleBox}></div>= 1 month
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,18 @@
 .primaryColor {
   color: #2f82ff;
 }
+.purpleColor {
+  color: #af50ff;
+}
+.blueColor {
+  color: #00beff;
+}
+.redColor {
+  color: #ff685f;
+}
+.greenColor {
+  color: #00d37e;
+}
 .mainDiv {
   min-height: calc(100vh - 63px);
   display: flex;
@@ -63,41 +75,7 @@
   font-size: 20px;
   padding-top: 20px;
 }
-.dot1 {
-  position: absolute;
-  left: 20%;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: #2f82ff;
-}
-.dot2 {
-  position: absolute;
-  top: 125%;
-  left: 80%;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: #d9d9d9;
-}
-.dot3 {
-  position: absolute;
-  top: 105%;
-  left: 80%;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: #2f82ff;
-}
-.dot4 {
-  position: absolute;
-  top: 105%;
-  left: 20%;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: #d9d9d9;
-}
+
 .features {
   padding-top: 150px;
   display: flex;
@@ -149,7 +127,90 @@
 }
 .achievementsCards {
   display: flex;
+  height: 100vh;
   flex-direction: column;
+
+  justify-content: center;
+  padding-left: 50px;
+  gap: 60px;
+}
+.achievementsCard {
+  height: 250px;
+  width: 470px;
+  background-color: #d6dae4;
+  border-radius: 10px;
+  border: solid 2px #7a7a7a;
+}
+.achievementsCard1 {
+  height: 250px;
+  width: 470px;
+  background-color: #d6dae4;
+  border-radius: 10px;
+  border: solid 2px #7a7a7a;
+}
+.achievementTitle {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.achievementDesc {
+  padding: 40px;
+  text-align: center;
+  font-size: 15;
+}
+.timelineDiv {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.timelineTitle {
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 50px;
+}
+.timeline {
+  padding-top: 40px;
+}
+.purpleBox {
+  background-color: #af50ff;
+  border: solid 4px black;
+  height: 30px;
+  width: 60px;
+}
+.blueBox {
+  background-color: #00beff;
+  border: solid 4px black;
+  height: 30px;
+  width: 60px;
+}
+.redBox {
+  background-color: #ff685f;
+  border: solid 4px black;
+  height: 30px;
+  width: 60px;
+}
+.greenBox {
+  background-color: #00d37e;
+  border: solid 4px black;
+  height: 30px;
+  width: 60px;
+}
+.timelineBox {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.PS {
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  gap: 40px;
+  font-weight: bold;
 }
 @media only screen and (max-width: 1000px) {
   .mainDiv {
@@ -175,6 +236,7 @@
   }
   .achievementsCards {
     align-items: center;
+    padding-left: 10px;
   }
 }
 
@@ -198,12 +260,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  .dot1,
-  .dot2,
-  .dot3,
-  .dot4 {
-    display: none;
-  }
+
   .features {
     justify-content: center;
     align-items: center;
