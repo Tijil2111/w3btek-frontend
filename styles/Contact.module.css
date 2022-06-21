@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.heading {
+  font-size: 50px;
+  color: #2f82ff;
+  text-align: center;
+  padding-top: 50px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+.contactBox {
+  background-color: #d6dded;
+  border-radius: 10px;
+  width: 900px;
+  height: 700px;
+  border: 1px solid #7a7a7a;
+  box-shadow: 0px 4px 7px rgba(180, 180, 180, 0.25);
+  display: flex;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+.sub {
+  font-size: 15px;
+  font-weight: 300;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+.form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.input {
+  background: #e2e6ee;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 14px 15px;
+  width: 350px;
+}
+.message {
+  background: #e2e6ee;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 14px 15px;
+  width: 500px;
+  height: 200px;
+  font-family: "Inter", sans-serif;
+}
+
+.submitButton {
+  width: 150px;
+  height: 67px;
+  background: #2f82ff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.contactMobile {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  .contactBox {
+    display: none;
+  }
+  .contactMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    background-color: #d6dded;
+    position: absolute; /* added */
+    bottom: 0; /* added */
+    left: 0;
+    border-radius: 10px;
+  }
+  .message {
+    background: #e2e6ee;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 14px 15px;
+    width: 400px;
+    height: 200px;
+    font-family: "Inter", sans-serif;
+  }
+}
