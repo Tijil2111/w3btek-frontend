@@ -1,0 +1,65 @@
+.productsContainer {
+  display: flex;
+  width: 100%;
+}
+
+#products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#heading {
+  text-align: center;
+  font-weight: bolder;
+}
+
+#left {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 120px);
+  border-right: 1px solid #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+
+#search {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bolder;
+  border: none;
+  background-color: #2f82ff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter {
+  background: #e2e6ee;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 14px 15px;
+}
+
+.inputControl {
+  margin-bottom: 10px;
+}
+
+#lastInputControl {
+  margin-bottom: 25px;
+}
