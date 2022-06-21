@@ -45,7 +45,8 @@ export default function Products({ products }) {
     if (updatedProducts.length > 0) {
       if (intPrice != null) {
         updatedProducts.forEach((product, index) => {
-          !parseInt(product.price) <= intPrice
+          console.log(parseInt(product.price) <= 1500);
+          !(parseInt(product.price) <= intPrice)
             ? updatedProducts.splice(index, 1)
             : {};
         });
