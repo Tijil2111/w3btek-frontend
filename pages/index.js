@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-
+import { faTrophy } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Home() {
   return (
     <div>
@@ -82,6 +83,22 @@ export default function Home() {
               technician to your place !
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className={styles.achievementsDiv}>
+        <div className={styles.mobileTitle}>Achievements</div>
+        <div className={styles.achievementsSide}>
+          <div className={styles.achivementsTitle}>Achievements</div>
+          <FontAwesomeIcon
+            icon={faTrophy}
+            size="2x"
+            className={styles.achievementsIcon}
+          />
+        </div>
+        <div className={styles.achievementsCards}>
+          <div>he</div>
+          <div>yo</div>
         </div>
       </div>
     </div>

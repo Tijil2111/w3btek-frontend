@@ -121,16 +121,62 @@
   width: 445px;
   align-self: flex-end;
 }
-
+.achievementsDiv {
+  height: 100vh;
+  display: flex;
+}
+.achievementsSide {
+  height: calc(100vh);
+  background-color: #2f82ff;
+  width: 50vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.achivementsTitle {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+.achievementsIcon {
+  color: white;
+  padding-top: 50px;
+}
+.mobileTitle {
+  display: none;
+}
+.achievementsCards {
+  display: flex;
+  flex-direction: column;
+}
 @media only screen and (max-width: 1000px) {
   .mainDiv {
     display: flex;
     flex-direction: column;
   }
-
-
+  .achievementsDiv {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .achievementsSide {
+    display: none;
+  }
+  .mobileTitle {
+    display: inline;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    padding-top: 50px;
+  }
+  .achievementsCards {
+    align-items: center;
+  }
+}
 @media only screen and (max-width: 1100px) {
-
   .text1 {
     font-size: 40px;
     font-weight: bold;
@@ -175,7 +221,5 @@
   .featuresDiv,
   .features1Div {
     width: 95% !important;
-  }
-  .features1Div {
   }
 }
