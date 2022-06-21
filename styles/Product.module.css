@@ -1,0 +1,29 @@
+.product {
+  width: 260px;
+  height: 295px;
+  background: #ffffff;
+  border: 1px solid #aeaeae;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 40px;
+  padding: 15px;
+}
+
+#image {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+#name {
+  font-size: 22px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+#type {
+  font-weight: bold;
+}
