@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import Features from "../Components/Features";
 
 export default function Home() {
   return (
@@ -36,54 +37,7 @@ export default function Home() {
         </div>
         <img src="/music1.svg" className={styles.image}></img>
       </div>
-      <div className={styles.learnDiv}>
-        <div>
-          <div className={styles.learnHead}>Learn how TuneSmith</div>
-          <div className={styles.learnHead1}>
-            can change <span className={styles.primaryColor}>music</span>
-          </div>
-          <div className={styles.learnSubHead}>Music is made to be felt</div>
-        </div>
-
-        <div className={styles.features}>
-          <div className={styles.featuresDiv}>
-            <div className={styles.featureTitle}>
-              Feel <span className={styles.primaryColor}>Music</span> Like Never
-              Before
-            </div>
-            <div className={styles.featureDesc}>
-              We make products used by artists so that the can feel their
-              creations. Taylor Swift, Arjit Singh are a few to name.
-            </div>
-            <div className={styles.featureDesc}>
-              Why dont you level up your music ?
-            </div>
-          </div>
-          <div className={styles.featuresDiv}>
-            <div className={styles.featureTitle}>
-              Feel <span className={styles.primaryColor}>More</span> Do{" "}
-              <span className={styles.primaryColor}>More</span>
-            </div>
-            <div className={styles.featureDesc}>
-              Our Products create an environment that enables you to vibe to the
-              latest music and increases your productivity
-            </div>
-          </div>
-          <div className={styles.featuresDiv}>
-            <div className={styles.featureTitle}>
-              Top <span className={styles.primaryColor}>Notch</span> Support
-            </div>
-            <div className={styles.featureDesc}>
-              Have an issue ? Cant set up your sound bar ?
-            </div>
-            <div className={styles.featureDesc}>
-              Contact our team thorugh the contact page and we will send a
-              technician to your place !
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <Features />
       <div className={styles.achievementsDiv}>
         <div className={styles.mobileTitle}>Achievements</div>
         <div id={styles.data}>

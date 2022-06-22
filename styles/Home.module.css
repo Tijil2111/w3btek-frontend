@@ -53,58 +53,6 @@
   box-shadow: 1px 5px 7px 2px rgb(216, 216, 216, 0.85);
 }
 
-.learnDiv {
-  min-height: calc(100vh - 73px);
-  display: flex;
-  flex-direction: column;
-  padding: 0 40px;
-}
-
-.learnHead {
-  padding-top: 30px;
-  font-weight: 600;
-  font-size: 40px;
-  text-align: center;
-}
-.learnHead1 {
-  font-weight: 600;
-  font-size: 40px;
-  text-align: center;
-}
-.learnSubHead {
-  text-align: center;
-  font-size: 20px;
-  padding-top: 20px;
-}
-
-.features {
-  padding-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.featuresDiv {
-  width: 470px;
-  margin-bottom: 50px;
-  background-color: #dcdfe6;
-  border-radius: 10px;
-  border: solid 2px #7a7a7a;
-  padding: 40px;
-}
-.featureTitle,
-.featureDesc {
-  width: 400px;
-}
-.featureTitle {
-  font-weight: bold;
-  font-size: 25px;
-  margin-bottom: 15px;
-}
-.featureDesc {
-  padding-top: 20px;
-  font-size: 15px;
-  font-weight: 500;
-}
 .achievementsDiv {
   height: 100vh;
   display: flex;
@@ -243,14 +191,10 @@
     font-size: 35px;
     font-weight: bold;
     color: black;
-    padding-top: 50px;
+    padding-top: 100px;
   }
   .achievementsCards {
     align-items: center;
-  }
-  .featuresDiv {
-    background: none !important;
-    border: none !important;
   }
 }
 
