@@ -2,6 +2,8 @@ import styles from "../styles/Products.module.css";
 import { server_link } from "../SERVER_LINK.json";
 import Product from "../Components/Product";
 import { useState } from "react";
+import { faFilter, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 
 export default function Products({ products }) {
@@ -10,6 +12,8 @@ export default function Products({ products }) {
   const [name, setName] = useState("");
   const [type, setType] = useState("");
   const [price, setPrice] = useState("");
+
+  const [open, setOpen] = useState(false);
 
   const filter = () => {
     if (!(name || type || price)) {
@@ -52,6 +56,7 @@ export default function Products({ products }) {
     }
 
     setDisplayingProducts(updatedProducts);
+    setOpen(false);
   };
 
   return (
@@ -60,7 +65,13 @@ export default function Products({ products }) {
         <title>Products - Tunesmith</title>
       </Head>
       <div className={styles.productsContainer}>
-        <div id={styles.left}>
+        <FontAwesomeIcon
+          onClick={() => (!open ? setOpen(true) : setOpen(false))}
+          icon={!open ? faFilter : faTimes}
+          id={styles.icon}
+          className={open ? styles.hidden : styles.iconVisible}
+        />
+        <div id={styles.left} className={open ? styles.visible : ""}>
           <h2 id={styles.heading}>Filter</h2>
           <div id={styles.filters}>
             <div className={styles.inputControl}>
