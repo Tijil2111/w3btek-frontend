@@ -1,0 +1,70 @@
+#container {
+  padding: 30px;
+}
+
+#title, #heading {
+  color: #2F82FF;
+  text-align: center;
+}
+
+#title {
+  margin-bottom: 70px;
+}
+
+#topContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+#searchBar {
+  width: 50%;
+  display: flex;
+  margin-right: 15px;
+  border: 1px solid #AFAFAF;
+  border-radius: 5px;
+}
+
+#input {
+  width: 100%;
+  background-color: #E2E6EE;
+  border: none;
+  padding: 0 35px;
+  height: 50px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 18px;
+  outline: none;
+}
+
+#icon {
+  width: 25px;
+  height: 50px;
+  padding: 0 35px;
+  background: #E2E6EE;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#askBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  font-size: 19px;
+  color: white !important;
+  background-color: #2F82FF;
+  box-shadow: 1px 5px 7px 2px rgba(167, 167, 167, 0.25);
+  border-radius: 5px;
+}
+
+#heading {
+  margin-bottom: 125px;
+}
+
+#cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
