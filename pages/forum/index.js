@@ -43,7 +43,7 @@ export default function Forum({ threads }) {
   );
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const response = await fetch(`${server_link}/api/forum`);
   const threads = await response.json();
 
