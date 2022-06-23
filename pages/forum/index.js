@@ -11,6 +11,11 @@ export default function Forum({ threads }) {
 
   const [renderedThreads, setRenderedThreads] = useState(JSON.parse(JSON.stringify(threads)));
 
+  useEffect(() => {
+    const updatedThreads = threads.filter(thread => thread.messages[0].toLowerCase().includes(topic.toLowerCase()));
+    setRenderedThreads(updatedThreads);
+  }, [topic]);
+
   return (
     <div id={styles.container}>
       <h1 id={styles.title}>Community</h1>
