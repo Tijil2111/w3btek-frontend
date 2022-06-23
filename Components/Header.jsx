@@ -45,6 +45,11 @@ export default function Header() {
               <div className={styles.navLink}>Reviews</div>
             </Link>
           </li>
+          <li className={`${styles.navListItem}`}>
+            <Link href="/forum">
+              <div className={styles.navLink}>Forum</div>
+            </Link>
+          </li>
           <li className={`${styles.navListItem}`} id={styles.lastItem}>
             <Link href="/contact">
               <div id={styles.contactBtn}>Contact Us</div>
