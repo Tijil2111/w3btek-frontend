@@ -1,5 +1,6 @@
 import styles from "../../styles/Forum.module.css";
 import Link from "next/link";
+import Head from "next/head";
 import { useEffect, useState } from "react";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,29 +18,34 @@ export default function Forum({ threads }) {
   }, [topic]);
 
   return (
-    <div id={styles.container}>
-      <h1 id={styles.title}>Community</h1>
-      <div id={styles.topContainer}>
-        <div id={styles.searchBar}>
-          <input id={styles.input} value={topic} onChange={e => setTopic(e.target.value)} type="text" placeholder="Search for a Topic" />
-          <FontAwesomeIcon icon={faSearch} id={styles.icon} />
+    <>
+      <Head>
+        <title>Community Forum - Tunesmith</title>
+      </Head>
+      <div id={styles.container}>
+        <h1 id={styles.title}>Community</h1>
+        <div id={styles.topContainer}>
+          <div id={styles.searchBar}>
+            <input id={styles.input} value={topic} onChange={e => setTopic(e.target.value)} type="text" placeholder="Search for a Topic" />
+            <FontAwesomeIcon icon={faSearch} id={styles.icon} />
+          </div>
+          <Link href="/ask"><div id={styles.askBtn}>Ask</div></Link>
         </div>
-        <Link href="/ask"><div id={styles.askBtn}>Ask</div></Link>
+        <h1 id={styles.heading}>All Topics</h1>
+        <div id={styles.cards}>
+          {renderedThreads.map((thread, index) => {
+            return (
+              <Card 
+                key={index}
+                name={thread.name}
+                messages={thread.messages}
+                date={thread.date}
+              />
+            )
+          })}
+        </div>
       </div>
-      <h1 id={styles.heading}>All Topics</h1>
-      <div id={styles.cards}>
-        {renderedThreads.map((thread, index) => {
-          return (
-            <Card 
-              key={index}
-              name={thread.name}
-              messages={thread.messages}
-              date={thread.date}
-            />
-          )
-        })}
-      </div>
-    </div>
+    </>
   );
 }
 
