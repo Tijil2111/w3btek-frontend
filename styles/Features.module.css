@@ -29,29 +29,7 @@
   text-align: center;
   width: 500px;
 }
-.underline {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-}
 
-.underline:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 3px;
-  bottom: -5px;
-  left: 0;
-  background-color: black;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.underlines:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
 .featuresDiv {
   gap: 50px;
   display: flex;

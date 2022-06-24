@@ -41,14 +41,6 @@ export default function Home() {
       <div className={styles.achievementsDiv}>
         <div className={styles.mobileTitle}>Achievements</div>
         <div id={styles.data}>
-          <div className={styles.achievementsSide}>
-            <div className={styles.achivementsTitle}>Achievements</div>
-            <FontAwesomeIcon
-              icon={faTrophy}
-              size="2x"
-              className={styles.achievementsIcon}
-            />
-          </div>
           <div className={styles.achievementsCards}>
             <div className={styles.achievementsCard}>
               <div className={styles.achievementTitle}>
@@ -104,7 +96,8 @@ export default function Home() {
           <div className={styles.greenBox}></div>
           <div className={styles.timelineBox}>
             <div className={styles.greenBox}></div>
-            <div className={styles.greenColor}>World Wide</div>
+            <div className={styles.greenColor}>World</div>
+            <div className={styles.greenColor}>Wide</div>
           </div>
           <div className={styles.greenBox}></div>
           <div className={styles.PS}>
