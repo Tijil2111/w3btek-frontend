@@ -47,6 +47,25 @@ export default function Home() {
           vibing to the music you like, vibing to the music you live for.
         </div>
         <img src="/headphones.jpeg" height={500}></img>
+        <div className={styles.title}>
+          <div>
+            What We Have <span className={styles.primaryColor}>Achieved</span>
+          </div>
+        </div>
+        <div className={styles.supportRow}>
+          <div className={styles.achievementCard}>
+            <div className={styles.achivementTitle}>50+</div>
+            <div className={styles.achivementSub}>Countries</div>
+          </div>
+          <div className={styles.achievementCard}>
+            <div className={styles.achivementTitle}>10+</div>
+            <div className={styles.achivementSub}>Awards</div>
+          </div>
+          <div className={styles.achievementCard}>
+            <div className={styles.achivementTitle}>10 Million +</div>
+            <div className={styles.achivementSub}>Customers</div>
+          </div>
+        </div>
         <div className={styles.title1}>
           <div>
             <span className={styles.primaryColor}>Support </span> For All
@@ -75,13 +94,42 @@ export default function Home() {
           </div>
           <div className={styles.card}>
             <img
-              src="https://pbs.twimg.com/profile_images/1164525925242986497/N5_DCXYQ_400x400.jpg"
+              src="https://blogs.windows.com/wp-content/uploads/prod/2020/08/windows-logo-social.png"
               height={150}
               className={styles.cardImg}
             ></img>
-            <div className={styles.cardTitle}>Android</div>
+            <div className={styles.cardTitle}>Windows</div>
+          </div>
+          <div className={styles.card}>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/MacOS_logo_%282017%29.svg/800px-MacOS_logo_%282017%29.svg.png"
+              height={150}
+              className={styles.cardImg}
+            ></img>
+            <div className={styles.cardTitle}>macOS</div>
+          </div>
+          <div className={styles.card}>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/640px-Tux.svg.png"
+              height={150}
+              className={styles.cardImg}
+            ></img>
+            <div className={styles.cardTitle}>Linux</div>
           </div>
         </div>
+
+        <div className={styles.title}>
+          <div>
+            <span className={styles.primaryColor}>Listen </span>Confidently In
+            High Noise
+          </div>
+        </div>
+        <div className={styles.sub2}>
+          Whether you are at a boring party, or in a public transpart our gear
+          is all set. Noise cancelling is our first priority. Our cheapest gear
+          also comes with it.
+        </div>
+        <img src="/noise.gif" className={styles.gif}></img>
       </div>
     </div>
   );
