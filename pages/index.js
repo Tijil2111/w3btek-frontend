@@ -3,7 +3,6 @@ import styles from "../styles/Home.module.css";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import Features from "../Components/Features";
 
 export default function Home() {
   return (
@@ -15,95 +14,39 @@ export default function Home() {
           content="We are supercharging the modern music"
         />
       </Head>
-      <div className={styles.mainDiv}>
-        <div className={styles.sideTitle}>
-          <div className={styles.text1}>Your</div>
-          <div className={styles.text1}>Gateway</div>
-          <div className={styles.text1}>
-            to <span className={styles.text2}>Music</span>
-          </div>
-          <div className={styles.subDiv}>
-            <div className={styles.subText}>Join the community where we</div>
-            <div className={styles.subText}>
-              make things that helps you feel
-            </div>
-            <div className={styles.subText}>the tune</div>
-          </div>
-          <div className={styles.buttonDiv}>
-            <Link href="/products">
-              <button className={styles.button}>Shop Now</button>
-            </Link>
+      <div className={styles.div1}>
+        <div className={styles.title}>
+          <div>
+            Vibing To <span className={styles.primaryColor}>Music</span> Just
+            Got Easier
           </div>
         </div>
-        <img src="/music1.svg" className={styles.image}></img>
-      </div>
-      <Features />
-      <div className={styles.achievementsDiv}>
-        <div className={styles.mobileTitle}>Achievements</div>
-        <div id={styles.data}>
-          <div className={styles.achievementsCards}>
-            <div className={styles.achievementsCard}>
-              <div className={styles.achievementTitle}>
-                In <span className={styles.primaryColor}>Top 3</span> Music Wear
-                Producers
-              </div>
-              <div className={styles.achievementDesc}>
-                In 2021, TuneSmith gained the 2nd position in the Top 3 music
-                wear producers, being second to Bose.
-              </div>
-            </div>
-            <div>
-              <div className={styles.achievementsCard1}>
-                <div className={styles.achievementTitle}>
-                  Awarded <span className={styles.primaryColor}>MTV</span> Best
-                  Music Wear Producer
-                </div>
-                <div className={styles.achievementDesc}>
-                  In 2022, TuneSmith was awarded the MTV Best Music Wear
-                  Producer of the year award.
-                </div>
-              </div>
-            </div>
+        <div className={styles.sub}>
+          <div>
+            Powered by Music, Felt by all, Made By Professionals, For
+            Professionals.
           </div>
         </div>
-      </div>
-      <div className={styles.timelineDiv}>
-        <div className={styles.timelineTitle}>Our Journey !</div>
+        <div className={styles.buttonDiv}>
+          <button className={styles.shop}>Shop Now</button>
+        </div>
+        <img src="/headphonesGif.gif" className={styles.gif}></img>
+        <div className={styles.sub1}>
+          Tested by artists across the world, TuneSmith turns music into an
+          emotion you can feel.
+        </div>
 
-        <div className={styles.timeline}>
-          <div className={styles.timelineBox}>
-            <div className={styles.purpleBox}></div>
-            <div className={styles.purpleColor}>India</div>
-          </div>
-          <div className={styles.blueBox}></div>
-          <div className={styles.timelineBox}>
-            <div className={styles.blueBox}></div>
-            <div className={styles.blueColor}>Japan</div>
-          </div>
-          <div className={styles.blueBox}></div>
-          <div className={styles.redBox}></div>
-          <div className={styles.timelineBox}>
-            <div className={styles.redBox}></div>
-            <div className={styles.redColor}>USA</div>
-          </div>
-          <div className={styles.redBox}></div>
-          <div className={styles.redBox}></div>
-          <div className={styles.blueBox}></div>
-          <div className={styles.timelineBox}>
-            <div className={styles.blueBox}></div>
-            <div className={styles.blueColor}>UK</div>
-          </div>
-          <div className={styles.greenBox}></div>
-          <div className={styles.timelineBox}>
-            <div className={styles.greenBox}></div>
-            <div className={styles.greenColor}>World</div>
-            <div className={styles.greenColor}>Wide</div>
-          </div>
-          <div className={styles.greenBox}></div>
-          <div className={styles.PS}>
-            <div className={styles.purpleBox}></div>= 1 month
+        <div className={styles.title1}>
+          <div>
+            Focus On <span className={styles.primaryColor}>Music</span> Rather
+            Than Quality
           </div>
         </div>
+        <div className={styles.sub2}>
+          Spend less time adjusting the quality of your gear, and more time on
+          vibing to the music you like, to vibe to the music you live for.
+        </div>
+        <img src="/headphones.jpeg" height={500}></img>
       </div>
     </div>
   );

@@ -1,48 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 .primaryColor {
   color: #2f82ff;
 }
-.purpleColor {
-  color: #af50ff;
-}
-.blueColor {
-  color: #00beff;
-}
-.redColor {
-  color: #ff685f;
-}
-.greenColor {
-  color: #00d37e;
-}
-.mainDiv {
-  min-height: calc(100vh - 63px);
-  display: flex;
-  justify-content: space-around;
-  padding: 0 40px;
-}
-.sideTitle {
+.div1 {
+  background-color: white;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
-.text1 {
-  font-size: 60px;
+
+.title {
+  font-size: 50px;
+  padding-top: 150px;
+  padding-bottom: 50px;
   font-weight: bold;
 }
-.text2 {
-  color: #2f82ff;
-}
-.subText {
-  font-weight: bold;
+
+.sub {
+  width: 400px;
+  text-align: center;
+  font-weight: 400;
   font-size: 20px;
 }
-.subDiv {
-  padding-top: 30px;
-}
 .buttonDiv {
-  padding-top: 30px;
+  padding-top: 20px;
 }
-.button {
-  padding: 15px 30px;
+.shop {
+  font-family: "Inter", sans-serif !important;
+  padding: 20px 35px;
   font-size: 16px;
   font-weight: bolder;
   border: none;
@@ -50,192 +36,47 @@
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 1px 5px 7px 2px rgb(216, 216, 216, 0.85);
 }
-
-.achievementsDiv {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.mobileTitle {
-  display: inline;
-  text-align: center;
-  font-size: 35px;
-  font-weight: bold;
-  color: #2f82ff;
-  padding-top: 100px;
-}
-.achievementsCards {
-  display: flex;
-  height: 100vh;
-  padding-top: 100px;
-  gap: 60px;
-  justify-content: center;
-  margin: auto;
-}
-#data {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-.achievementsCard {
-  height: 250px;
-  width: 470px;
-  background-color: #d6dae4;
-  border-radius: 10px;
-  border: solid 2px #7a7a7a;
-  margin-bottom: 40px;
-}
-.achievementsCard1 {
-  height: 250px;
-  width: 470px;
-  background-color: #d6dae4;
-  border-radius: 10px;
-  border: solid 2px #7a7a7a;
-}
-.achievementTitle {
-  text-align: center;
+.gif {
   padding-top: 40px;
-  font-size: 20px;
+}
+.sub1 {
+  padding-top: 100px;
+  font-size: 25px;
   font-weight: 600;
-}
-.achievementDesc {
-  padding: 40px;
+  width: 500px;
   text-align: center;
-  font-size: 15;
+  padding-bottom: 50px;
 }
-.timelineDiv {
-  height: 50vh;
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.timelineTitle {
-  font-size: 35px;
+
+.title1 {
+  padding-top: 100px;
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 50px;
   font-weight: bold;
-  padding-top: 50px;
 }
-.timeline {
-  padding-top: 40px;
-  display: flex;
-}
-.purpleBox {
-  background-color: #af50ff;
-  border: solid 4px black;
-  height: 30px;
-  width: 60px;
-}
-.blueBox {
-  background-color: #00beff;
-  border: solid 4px black;
-  height: 30px;
-  width: 60px;
-}
-.redBox {
-  background-color: #ff685f;
-  border: solid 4px black;
-  height: 30px;
-  width: 60px;
-}
-.greenBox {
-  background-color: #00d37e;
-  border: solid 4px black;
-  height: 30px;
-  width: 60px;
-}
-.timelineBox {
-  gap: 40px;
-  align-items: center;
+.sub2 {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 400;
+  width: 600px;
+  text-align: center;
 }
 
-.PS {
-  display: flex;
-  padding-top: 50px;
-  padding-left: 50px;
-  align-items: center;
-  gap: 40px;
-  font-weight: bold;
-}
-@media only screen and (max-width: 1000px) {
-  .mainDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 1000px) {
+  .title {
+    font-size: 30px;
   }
-
-  .achievementsDiv {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+  .sub1 {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-
-  .achievementsCards {
-    padding-top: 20px;
-    gap: 40px;
-    align-items: center;
-    flex-direction: column;
+  .title1 {
+    font-size: 30px;
   }
-}
-
-@media only screen and (max-width: 1100px) {
-  .text1 {
-    font-size: 40px;
-    font-weight: bold;
-  }
-  .subText {
-    font-weight: bold;
+  .sub2 {
+    width: 400px;
     font-size: 15px;
-  }
-
-  .image {
-    height: 95%;
-    width: 95%;
-    align-self: center;
-  }
-  .sideTitle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .features {
-    justify-content: center;
-    align-items: center;
-  }
-  .timeline {
-    display: flex;
-    flex-direction: column;
-  }
-  .timelineBox {
-    display: flex;
-    gap: 10px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .mainDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .featuresDiv {
-    width: 95% !important;
-  }
-  .achievementsCard,
-  .achievementsCard1 {
-    width: 95% !important;
-  }
-  .achievementsCard1 {
-    margin-left: 10px;
-  }
-  .featureTitle,
-  .featureDesc {
-    width: 95%;
   }
 }
