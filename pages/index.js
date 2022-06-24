@@ -1,7 +1,7 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { faTrophy } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 export default function Home() {
@@ -44,9 +44,44 @@ export default function Home() {
         </div>
         <div className={styles.sub2}>
           Spend less time adjusting the quality of your gear, and more time on
-          vibing to the music you like, to vibe to the music you live for.
+          vibing to the music you like, vibing to the music you live for.
         </div>
         <img src="/headphones.jpeg" height={500}></img>
+        <div className={styles.title1}>
+          <div>
+            <span className={styles.primaryColor}>Support </span> For All
+          </div>
+        </div>
+        <div className={styles.sub2}>
+          Our gear integrates directly into your devices without any hassle be
+          it Android, iOS etc.
+        </div>
+        <div className={styles.supportRow}>
+          <div className={styles.card}>
+            <img
+              src="https://pbs.twimg.com/profile_images/1164525925242986497/N5_DCXYQ_400x400.jpg"
+              height={150}
+              className={styles.cardImg}
+            ></img>
+            <div className={styles.cardTitle}>Android</div>
+          </div>
+          <div className={styles.card}>
+            <img
+              src="https://play-lh.googleusercontent.com/7oYf_DNF77eJr9bIoY_GuN1OmYbgQL2VkZLTUfVI4TAspf8qdSjeJpIYbNQe-Va3FJlk"
+              height={150}
+              className={styles.cardImg}
+            ></img>
+            <div className={styles.cardTitle}>iOS</div>
+          </div>
+          <div className={styles.card}>
+            <img
+              src="https://pbs.twimg.com/profile_images/1164525925242986497/N5_DCXYQ_400x400.jpg"
+              height={150}
+              className={styles.cardImg}
+            ></img>
+            <div className={styles.cardTitle}>Android</div>
+          </div>
+        </div>
       </div>
     </div>
   );
