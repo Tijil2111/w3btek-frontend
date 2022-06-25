@@ -168,6 +168,7 @@
   }
   .mobileDiv {
     display: flex;
+    justify-content: center;
     position: fixed;
     background: white;
     width: 80%;

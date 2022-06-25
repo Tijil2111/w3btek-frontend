@@ -8,12 +8,16 @@ import { server_link } from "../../SERVER_LINK.json";
 import Card from "../../Components/Card";
 
 export default function Forum({ threads }) {
-  const [topic, setTopic] = useState('');
+  const [topic, setTopic] = useState("");
 
-  const [renderedThreads, setRenderedThreads] = useState(JSON.parse(JSON.stringify(threads)));
+  const [renderedThreads, setRenderedThreads] = useState(
+    JSON.parse(JSON.stringify(threads))
+  );
 
   useEffect(() => {
-    const updatedThreads = threads.filter(thread => thread.messages[0].toLowerCase().includes(topic.toLowerCase()));
+    const updatedThreads = threads.filter((thread) =>
+      thread.messages[0].toLowerCase().includes(topic.toLowerCase())
+    );
     setRenderedThreads(updatedThreads);
   }, [topic]);
 
@@ -26,22 +30,32 @@ export default function Forum({ threads }) {
         <h1 id={styles.title}>Community</h1>
         <div id={styles.topContainer}>
           <div id={styles.searchBar}>
-            <input id={styles.input} value={topic} onChange={e => setTopic(e.target.value)} type="text" placeholder="Search for a Topic" />
+            <input
+              id={styles.input}
+              value={topic}
+              onChange={(e) => setTopic(e.target.value)}
+              type="text"
+              placeholder="Search for a Topic"
+            />
             <FontAwesomeIcon icon={faSearch} id={styles.icon} />
           </div>
-          <Link href="/ask"><div id={styles.askBtn}>Ask</div></Link>
+          <Link href="/ask">
+            <div id={styles.askBtn}>Ask</div>
+          </Link>
         </div>
         <h1 id={styles.heading}>All Topics</h1>
         <div id={styles.cards}>
-          {renderedThreads.map((thread, index) => {
+          {renderedThreads.map((thread) => {
             return (
-              <Card 
-                key={index}
-                name={thread.name}
-                messages={thread.messages}
-                date={thread.date}
-              />
-            )
+              <Link key={thread._id} href={"/forum/" + thread._id}>
+                <a>{thread.name}</a>
+                {/* <Card
+                  name={thread.name}
+                  messages={thread.messages}
+                  date={thread.date}
+                /> */}
+              </Link>
+            );
           })}
         </div>
       </div>
@@ -56,6 +70,6 @@ export const getServerSideProps = async () => {
   return {
     props: {
       threads,
-    }
-  }
+    },
+  };
 };
