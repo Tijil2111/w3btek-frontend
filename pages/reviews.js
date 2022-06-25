@@ -2,10 +2,14 @@ import React from "react";
 import ReviewCard from "../Components/ReviewCard";
 import { server_link } from "../SERVER_LINK.json";
 import styles from "../styles/Reviews.module.css";
+import Head from "next/head";
 
 export default function reviews({ reviews }) {
   return (
     <div className={styles.reviewPage}>
+      <Head>
+        <title>Reviews - TuneSmith</title>
+      </Head>
       <div className={styles.topDiv}>
         <div className={styles.title}>Reviews</div>
         <div className={styles.sub}>
