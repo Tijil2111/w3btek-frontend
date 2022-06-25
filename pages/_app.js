@@ -1,8 +1,6 @@
 import Header from "../Components/Header";
 import "../styles/globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import Footer from "../Components/Footer";
-import Head from "next/head";
 import { useState } from "react";
 import NProgress from "nprogress";
 import { Router } from "next/router";
@@ -26,7 +24,6 @@ function MyApp({ Component, pageProps }) {
         <Header />
 
         <Component {...pageProps} />
-        <Footer />
       </div>
     </>
   );

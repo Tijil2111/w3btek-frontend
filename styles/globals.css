@@ -19,6 +19,7 @@ ul {
 .blue {
   color: #2f82ff;
 }
+/* This is the code from the NPROGRESS NEXT.JS LOADER CSS FILE WE HAVE ADDED IT HERE IN ORDER TO CUSTOMIZE THE LOADER*/
 /* Make clicks pass-through */
 #nprogress {
   pointer-events: none;

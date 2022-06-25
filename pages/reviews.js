@@ -5,8 +5,17 @@ import styles from "../styles/Reviews.module.css";
 
 export default function reviews({ reviews }) {
   return (
-    <>
-      <div></div>
+    <div className={styles.reviewPage}>
+      <div className={styles.topDiv}>
+        <div className={styles.title}>Reviews</div>
+        <div className={styles.sub}>
+          This is what our customers say about us
+        </div>
+        <div className={styles.buttonDiv}>
+          {" "}
+          <div className={styles.add}>Add +</div>
+        </div>
+      </div>
       <div className={styles.reviews}>
         {reviews.map((reviewData, id) => {
           return (
@@ -18,7 +27,7 @@ export default function reviews({ reviews }) {
           );
         })}
       </div>
-    </>
+    </div>
   );
 }
 export async function getStaticProps() {
