@@ -3,6 +3,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -53,17 +55,60 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.supportRow}>
-          <div className={styles.achievementCard}>
-            <div className={styles.achivementTitle}>50+</div>
-            <div className={styles.achivementSub}>Countries</div>
+          <div className={styles.flipCard}>
+            <div className={styles.flipCardInner}>
+              <div className={styles.flipCardFront}>
+                <div className={styles.achivementTitle}>50+</div>
+                <div className={styles.achivementSub}>Countries</div>
+              </div>
+              <div className={styles.flipCardBack}>
+                <div className={styles.cardSub}>
+                  We have successfully launched our company in 50+ Countries
+                </div>
+                <FontAwesomeIcon
+                  icon={faTrophy}
+                  size="2x"
+                  className={styles.icon}
+                />
+              </div>
+            </div>
           </div>
-          <div className={styles.achievementCard}>
-            <div className={styles.achivementTitle}>10+</div>
-            <div className={styles.achivementSub}>Awards</div>
+          <div className={styles.flipCard}>
+            <div className={styles.flipCardInner}>
+              <div className={styles.flipCardFront}>
+                <div className={styles.achivementTitle}>10 Million +</div>
+                <div className={styles.achivementSub}>Customers</div>
+              </div>
+              <div className={styles.flipCardBack}>
+                <div className={styles.cardSub}>
+                  Our products are so loved that people keep buying them
+                </div>
+                <FontAwesomeIcon
+                  icon={faTrophy}
+                  size="2x"
+                  className={styles.icon}
+                />
+              </div>
+            </div>
           </div>
-          <div className={styles.achievementCard}>
-            <div className={styles.achivementTitle}>10 Million +</div>
-            <div className={styles.achivementSub}>Customers</div>
+          <div className={styles.flipCard}>
+            <div className={styles.flipCardInner}>
+              <div className={styles.flipCardFront}>
+                <div className={styles.achivementTitle}>10+</div>
+                <div className={styles.achivementSub}>Awards</div>
+              </div>
+              <div className={styles.flipCardBack}>
+                <div className={styles.cardSub}>
+                  Our company has been awarded the most prestigious awards in
+                  the field of Music Gear
+                </div>
+                <FontAwesomeIcon
+                  icon={faTrophy}
+                  size="2x"
+                  className={styles.icon}
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div className={styles.title1}>
