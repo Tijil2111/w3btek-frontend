@@ -79,13 +79,13 @@
   align-items: center;
   border: solid 2px black;
   border-radius: 10px;
-  transition: width 2s;
+  transition: all 0.3s;
 }
 .cardTitle {
   font-weight: bold;
 }
 .card:hover {
-  width: 400px;
+  transform: translateY(-5px);
 }
 
 .achivementTitle {
