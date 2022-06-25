@@ -48,12 +48,12 @@ export default function Forum({ threads }) {
           {renderedThreads.map((thread) => {
             return (
               <Link key={thread._id} href={"/forum/" + thread._id}>
-                <a>{thread.name}</a>
-                {/* <Card
+                <Card
                   name={thread.name}
                   messages={thread.messages}
                   date={thread.date}
-                /> */}
+                  id={thread._id}
+                />
               </Link>
             );
           })}
