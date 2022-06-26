@@ -1,5 +1,6 @@
 import styles from "../../styles/Thread.module.css";
 import Head from "next/head";
+import Link from "next/link";
 
 export const getStaticPaths = async () => {
   const res = await fetch("https://w3btek-backend.herokuapp.com/api/forum");
@@ -39,6 +40,13 @@ const Details = ({ data }) => {
         <title>Thread - TuneSmith</title>
       </Head>
       <h1 id={styles.heading}>{data.thread.messages[0]}</h1>
+      <div className={styles.return}>
+        <div className={styles.buttonDiv}>
+          <Link href="/forum">
+            <button className={styles.shop}>Return</button>
+          </Link>
+        </div>
+      </div>
       <div className={styles.box}>
         <div className={styles.date}>
           {`Question asked at ${data.thread.date}`}
@@ -49,13 +57,15 @@ const Details = ({ data }) => {
       </div>
       <div id={styles.answers}>
         <div className={styles.title}>Answers</div>
-        {answers.map((answer, index) => {
-          return (
-            <div key={index}>
-              <div className={styles.answer}>{answer}</div>
-            </div>
-          );
-        })}
+        <div className={styles.answerDiv}>
+          {answers.map((answer, index) => {
+            return (
+              <div key={index}>
+                <div className={styles.answer}>{answer}</div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
