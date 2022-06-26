@@ -126,6 +126,7 @@ export default function Home() {
             <img
               src="https://pbs.twimg.com/profile_images/1164525925242986497/N5_DCXYQ_400x400.jpg"
               height={150}
+              width={150}
               className={styles.cardImg}
             ></img>
             <div className={styles.cardTitle}>Android</div>
@@ -134,6 +135,7 @@ export default function Home() {
             <img
               src="https://play-lh.googleusercontent.com/7oYf_DNF77eJr9bIoY_GuN1OmYbgQL2VkZLTUfVI4TAspf8qdSjeJpIYbNQe-Va3FJlk"
               height={150}
+              width={150}
               className={styles.cardImg}
             ></img>
             <div className={styles.cardTitle}>iOS</div>
@@ -150,6 +152,7 @@ export default function Home() {
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/MacOS_logo_%282017%29.svg/800px-MacOS_logo_%282017%29.svg.png"
               height={150}
+              width={150}
               className={styles.cardImg}
             ></img>
             <div className={styles.cardTitle}>macOS</div>
@@ -158,6 +161,7 @@ export default function Home() {
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/640px-Tux.svg.png"
               height={150}
+              width={150}
               className={styles.cardImg}
             ></img>
             <div className={styles.cardTitle}>Linux</div>
