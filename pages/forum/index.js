@@ -29,16 +29,14 @@ export default function Forum({ threads }) {
       <div id={styles.container}>
         <h1 id={styles.title}>Community</h1>
         <div id={styles.topContainer}>
-          <div id={styles.searchBar}>
-            <input
-              id={styles.input}
-              value={topic}
-              onChange={(e) => setTopic(e.target.value)}
-              type="text"
-              placeholder="Search for a Topic"
-            />
-            <FontAwesomeIcon icon={faSearch} id={styles.icon} />
-          </div>
+          <input
+            id={styles.input}
+            value={topic}
+            onChange={(e) => setTopic(e.target.value)}
+            type="text"
+            placeholder="Search for a Topic"
+          />
+          <FontAwesomeIcon icon={faSearch} id={styles.icon} />
         </div>
         <h1 id={styles.heading}>All Topics</h1>
         <div id={styles.cards}>

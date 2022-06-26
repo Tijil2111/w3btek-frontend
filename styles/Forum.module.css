@@ -19,16 +19,8 @@
   margin-bottom: 100px;
 }
 
-#searchBar {
-  width: 50%;
-  display: flex;
-  margin-right: 15px;
-  border: 1px solid #afafaf;
-  border-radius: 5px;
-}
-
 #input {
-  width: 100%;
+  width: 60%;
   background-color: #e2e6ee;
   border: none;
   padding: 0 35px;
@@ -69,4 +61,13 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+  #input {
+    width: 90%;
+  }
+  #icon {
+    display: none;
+  }
 }
