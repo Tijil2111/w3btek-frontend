@@ -3,15 +3,6 @@ import Link from "next/link";
 import styles from "../styles/Card.module.css";
 
 export default function Card({ name, messages, date, id, link }) {
-  useEffect(() => {
-    document.querySelectorAll(".picture").forEach((picture) => {
-      const r = Math.floor(Math.random() * (255 - 120)) + 120;
-      const g = Math.floor(Math.random() * (255 - 120)) + 120;
-      const b = Math.floor(Math.random() * (255 - 120)) + 120;
-      picture.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-    });
-  }, []);
-
   return (
     // <Link href={`/forum/${id}`}>
     <div id={styles.card}>

@@ -45,8 +45,13 @@
   height: 150px;
   border-radius: 10px;
   width: 350px;
-  background-color: #d6dae4;
-  border: solid 2px #afafaf;
+  background-color: #f2f1f1;
+  transition: all 0.3s;
+  filter: drop-shadow(0px 5px 7px rgba(105, 102, 102, 0.25));
+  border: 1px solid #afafaf;
+}
+.answer:hover {
+  transform: translateY(-7px);
 }
 
 .answerDiv {
