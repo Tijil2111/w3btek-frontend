@@ -42,9 +42,9 @@
   justify-content: center;
   text-align: center;
   padding: 20px;
-  height: 150px;
+  height: 100%;
   border-radius: 10px;
-  width: 350px;
+  width: 90%;
   background-color: #f2f1f1;
   transition: all 0.3s;
   filter: drop-shadow(0px 5px 7px rgba(105, 102, 102, 0.25));
@@ -74,4 +74,22 @@
   color: white;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #container {
+    justify-content: center;
+    align-items: center;
+  }
+  .return {
+    align-self: center;
+    padding-bottom: 20px;
+  }
+  .box {
+    align-self: center;
+  }
 }

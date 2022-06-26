@@ -39,9 +39,8 @@ export default function Forum({ threads }) {
             />
             <FontAwesomeIcon icon={faSearch} id={styles.icon} />
           </div>
-          <Link href="/ask">
-            <div id={styles.askBtn}>Ask</div>
-          </Link>
+
+          <div id={styles.askBtn}>Ask</div>
         </div>
         <h1 id={styles.heading}>All Topics</h1>
         <div id={styles.cards}>
