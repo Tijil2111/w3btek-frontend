@@ -88,20 +88,26 @@
   filter: drop-shadow(0px 5px 7px rgba(173, 173, 173, 0.25));
   display: flex;
 }
-
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .title {
   font-size: 30px;
   font-weight: bold;
-  padding-left: 50px;
+
   padding-top: 30px;
   font-weight: bolder;
+  text-align: center;
 }
 .sub {
   font-size: 15px;
   font-weight: 300;
-  padding-left: 50px;
   padding-top: 20px;
   width: 80%;
+  text-align: center;
 }
 .form {
   padding: 50px;
