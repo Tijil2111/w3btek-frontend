@@ -1,21 +1,13 @@
 import React from "react";
 import ReviewCard from "../Components/ReviewCard";
 import { server_link } from "../SERVER_LINK.json";
-import { useState } from "react";
+import Link from "next/link";
 import styles from "../styles/Reviews.module.css";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
-import AddReview from "../Components/AddReview";
 
 export default function Reviews({ reviews }) {
-  const [modal, setModal] = useState(false);
-  const openModal = () => {
-    setModal(true);
-  };
-  const closeModal = () => {
-    setModal(false);
-  };
   return (
     <div className={styles.reviewPage}>
       <Head>
@@ -29,15 +21,17 @@ export default function Reviews({ reviews }) {
         </div>
         <div className={styles.buttonDiv}>
           {" "}
-          <div className={styles.add} onClick={openModal}>
-            Add +
-          </div>
-          <div className={styles.penOuter} onClick={openModal}>
-            <FontAwesomeIcon
-              icon={faPen}
-              size="2x"
-              className={styles.pen}
-            ></FontAwesomeIcon>
+          <Link href="/addReview">
+            <div className={styles.add}>Add + </div>
+          </Link>
+          <div className={styles.penOuter} href="/addReview">
+            <Link href="/addReview">
+              <FontAwesomeIcon
+                icon={faPen}
+                size="2x"
+                className={styles.pen}
+              ></FontAwesomeIcon>
+            </Link>
           </div>
         </div>
       </div>
@@ -52,7 +46,6 @@ export default function Reviews({ reviews }) {
           );
         })}
       </div>
-      {modal ? <AddReview close={closeModal} /> : <div></div>}
     </div>
   );
 }

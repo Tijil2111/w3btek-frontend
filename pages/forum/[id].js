@@ -47,9 +47,7 @@
 //         {answers.map((answer, index) => {
 //           return (
 //             <div key={index}>
-//               <div className={styles.answer}>
-//                 {answer}
-//               </div>
+//               <div className={styles.answer}>{answer}</div>
 //             </div>
 //           );
 //         })}

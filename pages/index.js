@@ -40,8 +40,7 @@ export default function Home() {
 
         <div className={styles.title1}>
           <div>
-            Focus On <span className={styles.primaryColor}>Music</span> Rather
-            Than Quality
+            <span className={styles.primaryColor}>Music</span> Goes On and On
           </div>
         </div>
         <div className={styles.sub2}>

@@ -53,6 +53,7 @@ export default function Forum({ threads }) {
                   messages={thread.messages}
                   date={thread.date}
                   id={thread._id}
+                  link={"/forum/" + thread._id}
                 />
               </Link>
             );
