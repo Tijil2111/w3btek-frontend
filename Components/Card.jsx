@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import styles from "../styles/Card.module.css";
 
-export default function Card({ name, messages, date, id }) {
+export default function Card({ name, messages, date, id, link }) {
   useEffect(() => {
     document.querySelectorAll(".picture").forEach((picture) => {
       const r = Math.floor(Math.random() * (255 - 120)) + 120;
@@ -26,6 +26,9 @@ export default function Card({ name, messages, date, id }) {
         messages.length - 1
       }`}</div>
       <div id={styles.date}>{`Thread started at -> ${date}`}</div>
+      <div id={styles.date}>
+        <Link href={link}>{`See More....`}</Link>
+      </div>
     </div>
     // </Link>
   );

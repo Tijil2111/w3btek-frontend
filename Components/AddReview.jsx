@@ -44,16 +44,12 @@ export default function AddReview({ close }) {
                 className={styles.message}
                 placeholder="Your Message"
                 required
-                name="description"
+                name="message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               />
 
-              <button
-                className={styles.submitButton}
-                type="submit"
-                onClick={submitReview}
-              >
+              <button className={styles.submitButton} type="submit">
                 Submit{" "}
               </button>
             </form>
@@ -86,13 +82,7 @@ export default function AddReview({ close }) {
                 value={message}
               />
 
-              <button
-                className={styles.submitButton}
-                type="submit"
-                onClick={() => {
-                  addData();
-                }}
-              >
+              <button className={styles.submitButton} type="submit">
                 Submit{" "}
               </button>
             </form>

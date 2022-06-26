@@ -30,7 +30,9 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.buttonDiv}>
-          <button className={styles.shop}>Shop Now</button>
+          <Link href="/products">
+            <button className={styles.shop}>Shop Now</button>
+          </Link>
         </div>
         <img src="/headphonesGif.gif" className={styles.gif}></img>
         <div className={styles.sub1}>
