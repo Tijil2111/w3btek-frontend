@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { server_link } from "../SERVER_LINK.json";
 import { useState } from "react";
+import Head from "next/head";
 
 export default function AddReview({ close }) {
   const [name, setName] = useState("");
@@ -18,74 +19,47 @@ export default function AddReview({ close }) {
     console.log(data);
   };
   return (
-    <div>
-      <div className={styles.main}>
-        <img src="/side.png" height={700} className={styles.img}></img>
+    <div className={styles.addReview}>
+      <Head>
+        <title>Add Review - TuneSmith</title>
+      </Head>
+      <div>
+        <div className={styles.box}>
+          <img src="/side.png" className={styles.reviewImg}></img>
+          <div className={styles.side}>
+            <div className={styles.title}>Review Us ! </div>
+            <div className={styles.sub}>
+              Why dont you leave some words for us ?
+            </div>
+            <div>
+              <form className={styles.form}>
+                <input
+                  type="text"
+                  className={styles.input}
+                  placeholder="Your Name"
+                  required
+                  name="name"
+                />
+                <input
+                  type="text"
+                  className={styles.input}
+                  placeholder="Your Email"
+                  required
+                  name="email"
+                />
+                <textarea
+                  type="text"
+                  className={styles.message}
+                  placeholder="Your Message"
+                  required
+                  name="description"
+                />
 
-        <div className={styles.side}>
-          <div className={styles.title}>Review Us ! </div>
-          <div className={styles.sub1}>
-            Why dont you write a review for us ?
-          </div>
-          <div>
-            <form className={styles.form}>
-              <input
-                type="text"
-                className={styles.input}
-                placeholder="Your Name"
-                required
-                name="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-
-              <textarea
-                type="text"
-                className={styles.message}
-                placeholder="Your Message"
-                required
-                name="message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              />
-
-              <button className={styles.submitButton} type="submit">
-                Submit{" "}
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div className={styles.mobileDiv}>
-        <div className={styles.sideMobile}>
-          <div className={styles.title}>Review Us ! </div>
-          <div className={styles.sub1}>
-            Why dont you write a review for us ?
-          </div>
-          <div>
-            <form className={styles.form}>
-              <input
-                type="text"
-                className={styles.input}
-                placeholder="Your Name"
-                required
-                name="name"
-                value={name}
-              />
-
-              <textarea
-                type="text"
-                className={styles.message}
-                placeholder="Your Message"
-                required
-                name="description"
-                value={message}
-              />
-
-              <button className={styles.submitButton} type="submit">
-                Submit{" "}
-              </button>
-            </form>
+                <button className={styles.submitButton} type="submit">
+                  Submit{" "}
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
